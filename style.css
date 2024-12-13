@@ -1,0 +1,250 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex
+}
+
+.w-container {
+    max-width: 940px;
+    margin-left: auto;
+    margin-right: auto
+}
+
+
+html {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+body {
+    min-height: 100%;
+    color: #333;
+    background-color: rgb(0, 0, 0);
+    margin: 0;
+    font-family: 'Volkhorn';
+    font-size: 14px;
+    line-height: 20px
+}
+
+
+/* Navbar */
+
+
+.nav-social {
+    z-index: 9999;
+    grid-column-gap: 16px;
+    grid-row-gap: 15px;
+    grid-template-rows: 50px
+                        45px
+                        auto;
+    grid-template-columns: 1fr;
+    grid-auto-columns: 1fr;
+    display: grid;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    right: 0
+}
+
+.logo-image {
+    width: 50px; /* Adjust size as needed */
+    height: 50px; /* Maintain aspect ratio or adjust */
+    object-fit: contain; /* Ensures the image scales well */
+    border-radius: 50%; /* Optional: Make the logo circular */
+    border: 2px solid #9f9f9f; /* Optional: Add a border */
+}
+
+.icon {
+    color: #f7f7f7;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    font-family: "Fa brands 400", sans-serif;
+    font-size: 16px
+}
+
+.icon.solid {
+    font-family: "Fa solid 900", sans-serif;
+    font-weight: 900
+}
+
+
+.icon:hover {
+    color: rgba(255, 255, 255, .4)
+}
+
+img {
+    background-image: url(garden.png);
+}
+
+
+#logo {
+    grid-area: 1/1/2/2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 2px;
+}
+
+#emailiconlight {
+    grid-area: 2/1/3/2;
+}
+
+#linkediniconlight {
+    grid-area: 3/1/4/2;
+}
+
+.w-layout-grid {
+    grid-row-gap: 16px;
+    grid-column-gap: 16px;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-columns: 1fr;
+    display: grid
+}
+
+.nav {
+    z-index: 999;
+    width: 80px;
+    height: 100%;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    display: flex;
+    position: fixed;
+    top: 0;
+    box-shadow: 1px 0 1px #9f9f9f; /* Subtle shadow on the right */
+    background-color: rgb(0, 0, 0); /* Ensure the background is visible behind the line */
+}
+
+/* Sidebar Links */
+.nav-projects {
+    grid-row-gap: 20px;
+    grid-template-rows: auto 
+                        56px 
+                        auto 
+                        30px 
+                        auto 
+                        40px 
+                        auto;
+    grid-template-columns: 1fr;
+    margin-bottom: 0;
+}
+
+.link-projects {
+    opacity: 1;
+    color: rgb(255, 255, 255);
+    padding: 10px 0;
+    font-size: 20px;
+    display: flex;
+    transform: rotate(-90deg);
+}
+
+a {
+    color: #6c6c79;
+    text-decoration: none;
+    transition: color .6s
+}
+
+a:hover {
+    color: #9f9f9f
+}
+
+
+#menode {
+    grid-area: 1/1/2/2
+}
+
+#edunode {
+    grid-area: 3/1/4/2
+}
+
+#expnode {
+    grid-area: 5/1/6/2
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@font-face {
+    font-family: 'Fa brands 400';
+    src: url('https://uploads-ssl.webflow.com/5b8987816c4d52a8ec985345/5bf0443db7d3e91d7b6865e3_fa-brands-400.woff2') format('woff2'), 
+         url('https://uploads-ssl.webflow.com/5b8987816c4d52a8ec985345/5bf0443d017c2126720952ee_fa-brands-400.eot') format('embedded-opentype'), 
+         url('https://uploads-ssl.webflow.com/5b8987816c4d52a8ec985345/5bf0443f5392761e66857822_fa-brands-400.woff') format('woff'), 
+         url('https://uploads-ssl.webflow.com/5b8987816c4d52a8ec985345/5bf0443edf7c09b1b92c78dd_fa-brands-400.ttf') format('truetype'), 
+         url('https://uploads-ssl.webflow.com/5b8987816c4d52a8ec985345/5bf0443f76777f7d85434cfe_fa-brands-400.svg') format('svg');
+    font-weight: 400;
+    font-style: normal;
+    font-display: auto;
+}
+
+@font-face {
+    font-family: 'Fa solid 900';
+    src: url('https://uploads-ssl.webflow.com/5b8987816c4d52a8ec985345/5bf0443e486e7f6b06d6785b_fa-solid-900.woff2') format('woff2'), url('https://uploads-ssl.webflow.com/5b8987816c4d52a8ec985345/5bf0443e486e7f7e59d6785c_fa-solid-900.eot') format('embedded-opentype'), url('https://uploads-ssl.webflow.com/5b8987816c4d52a8ec985345/5bf0443e60911a083b54e4b0_fa-solid-900.woff') format('woff'), url('https://uploads-ssl.webflow.com/5b8987816c4d52a8ec985345/5bf0443e3a50d133b2cb73c0_fa-solid-900.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: auto;
+}
+
+@font-face {
+    font-family: 'Fa 400';
+    src: url('https://uploads-ssl.webflow.com/5b8987816c4d52a8ec985345/5bf047d276777f7735434e0b_fa-regular-400.woff2') format('woff2'), url('https://uploads-ssl.webflow.com/5b8987816c4d52a8ec985345/5bf047d176777f65ef434e0a_fa-regular-400.eot') format('embedded-opentype'), url('https://uploads-ssl.webflow.com/5b8987816c4d52a8ec985345/5bf047d1486e7f533bd67962_fa-regular-400.woff') format('woff'), url('https://uploads-ssl.webflow.com/5b8987816c4d52a8ec985345/5bf047d1de18dd3cd4425d55_fa-regular-400.ttf') format('truetype'), url('https://uploads-ssl.webflow.com/5b8987816c4d52a8ec985345/5bf047d260911ab22f54e8fb_fa-regular-400.svg') format('svg');
+    font-weight: 400;
+    font-style: normal;
+    font-display: auto;
+}
+
+@font-face {
+    font-family: 'Larsseit';
+    src: url('https://uploads-ssl.webflow.com/5b8987816c4d52a8ec985345/5ba698f22756cb2edcd26ce7_Larsseit-ExtraBold.eot') format('embedded-opentype'), url('https://uploads-ssl.webflow.com/5b8987816c4d52a8ec985345/5ba698f25ced0c1291e55227_Larsseit-ExtraBold.woff') format('woff'), url('https://uploads-ssl.webflow.com/5b8987816c4d52a8ec985345/5ba698f29ad787614b1e7a9c_Larsseit-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+    font-display: auto;
+}
+
+@font-face {
+    font-family: 'Larsseit';
+    src: url('https://uploads-ssl.webflow.com/5b8987816c4d52a8ec985345/5ba698f2fb278df250746418_Larsseit-Bold.eot') format('embedded-opentype'), url('https://uploads-ssl.webflow.com/5b8987816c4d52a8ec985345/5ba698f2f49b777717f01652_Larsseit-Bold.woff') format('woff'), url('https://uploads-ssl.webflow.com/5b8987816c4d52a8ec985345/5ba698f25ced0cef71e55228_Larsseit-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: auto;
+}
+
