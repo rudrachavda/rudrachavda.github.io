@@ -181,6 +181,8 @@ a:hover {
     padding: 30px;
     margin-left: 80px;
     background-color: floralwhite;
+    /* border-bottom: 1px solid #e3e3e3;
+    padding-bottom: 0px; */
 }
 
 
@@ -222,8 +224,6 @@ a:hover {
     font-weight: 400;
     color: darkgreen;
     letter-spacing: 0.5px;
-    border-bottom: 1px solid #e3e3e3;
-    padding-bottom: 150px;
     transition: color .6s
 }
 
@@ -236,13 +236,6 @@ a:hover {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr auto;
     gap: 10px 10px;
-    /* grid-template-areas:
-        ". . image-2 image-2 image-2 image-3 image-3"
-        "image-1 image-1 image-2 image-2 image-2 image-3 image-3"
-        "image-1 image-1 image-2 image-2 image-2 image-4 image-4"
-        "image-1 image-1 . . . image-4 image-4"; */
-    border-bottom: 1px solid #e3e3e3;
-    padding-bottom: 50px;
 }
 
 .image-1 {
@@ -379,6 +372,7 @@ a:hover {
 
 .content-divider {
     margin-left: 110px;
+    margin-bottom: 30px;
     font-size: 20px;
     font-weight: 400;
     color: black;
@@ -481,6 +475,9 @@ a:hover {
 }
 
 
+#specialdiv {
+    margin-bottom: 0;
+}
 
 /* Scroll Test */
 
