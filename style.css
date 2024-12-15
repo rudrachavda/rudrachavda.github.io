@@ -224,8 +224,12 @@ a:hover {
     letter-spacing: 0.5px;
     border-bottom: 1px solid #e3e3e3;
     padding-bottom: 150px;
+    transition: color .6s
 }
 
+.about-subtitle:hover {
+    color: burlywood;
+}
 
 .about-images {
     display: grid;
