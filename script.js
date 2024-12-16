@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
             // Dynamically adjust text position below the scaled image
             const scaledHeight = holder.offsetHeight * scale; // Height of the scaled image
             text.style.top = `${holder.offsetTop + scaledHeight + 30}px`; // Position text
-            text.style.opacity = '0'; // Keep it hidden while scaling
+            text.style.opacity = '1'; // Keep it hidden while scaling
         } else if (scrollTop >= stop) {
             image.style.transform = `scale(0.6)`; // Final scaled state
 
