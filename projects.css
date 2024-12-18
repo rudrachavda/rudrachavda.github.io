@@ -34,10 +34,12 @@ body {
     display: flex;
     flex-direction: column;
     /* margin-left: 80px;  */
-    padding: 0 0px; /* Add some horizontal padding */
-    max-width: 1500px; /* Limit width for monitors */
+    padding: 0 0px;
+    /* Add some horizontal padding */
+    max-width: 1500px;
+    /* Limit width for monitors */
     margin-right: auto;
-    margin-left: auto; 
+    margin-left: auto;
 }
 
 
@@ -45,11 +47,14 @@ body {
 @keyframes fade-right {
     from {
         opacity: 0;
-        transform: translateX(30px) scale(0.9) ; /* Slide in from the right */
+        transform: translateX(30px) scale(0.9);
+        /* Slide in from the right */
     }
+
     to {
         opacity: 1;
-        transform: translateX(0px) scale(1); /* End at original position */
+        transform: translateX(0px) scale(1);
+        /* End at original position */
     }
 }
 
@@ -77,7 +82,7 @@ body {
     /* Adjust size as needed */
     height: 50px;
     /* Maintain aspect ratio or adjust */
-    object-fit: contain;
+    object-fit: cover;
     /* Ensures the image scales well */
     border-radius: 50%;
     /* Optional: Make the logo circular */
@@ -190,6 +195,7 @@ a:hover {
 #expnode {
     grid-area: 5/1/6/2
 }
+
 
 
 
