@@ -689,7 +689,12 @@ h4 {
         margin-bottom: 20px;
     }
 
+    .about-heading {
+        text-align: left;
+    }
+
     .about-title {
+        text-align: left;
         font-size: 60px;
         /* Reduce title size */
     }
