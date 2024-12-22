@@ -29,7 +29,6 @@ body {
     line-height: 20px
 }
 
-
 .page-wrapper {
     display: flex;
     flex-direction: column;
@@ -42,21 +41,6 @@ body {
     margin-left: auto;
 }
 
-
-/* Fade-in Animation */
-@keyframes fade-right {
-    from {
-        opacity: 0;
-        transform: translateX(30px) scale(0.9);
-        /* Slide in from the right */
-    }
-
-    to {
-        opacity: 1;
-        transform: translateX(0px) scale(1);
-        /* End at original position */
-    }
-}
 
 
 
@@ -199,7 +183,34 @@ a:hover {
 
 
 
-@media only screen and (max-width: 768px) {
+
+
+/* Header */
+
+
+
+.header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0px 10px;
+}
+
+.headertext {
+    
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+
+    /* Adjust Navbar */
     .nav {
         position: fixed;
         top: 0;
@@ -260,6 +271,21 @@ a:hover {
         /* Add space below the navbar */
         padding: 10px;
         /* Adjust padding for smaller screens */
+    }
+
+    .header {
+        margin-left: 0;
+        /* Remove margin */
+    }
+
+    .headertext {
+        font-size: 20px;
+        /* Adjust font size */
+    }
+
+    .clock {
+        font-size: 20px;
+        /* Adjust font size */
     }
 }
 
