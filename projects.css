@@ -242,20 +242,26 @@ a:hover {
 .projectcardcontainer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px 20px;
+    gap: 30px 30px;
     margin-left: 80px;
     padding-left: 30px;
     padding-right: 30px;
+    margin-bottom: 20px;
+}
+
+:root {
+    --sizeVar: 2vw;
+    --animVar: 200ms;
 }
 
 .projectcards {
-    width: calc(var(--sizeVar) * 5.6);
+    width: 100%;
     aspect-ratio: 1 / 1;
-    background-color: #ffffff;
+    background-color: black;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: calc(var(--sizeVar) * 0.7);
+    border-radius: 0px;
     font-size: calc(var(--sizeVar) * 2);
     font-family: sans-serif;
     font-weight: 300;
