@@ -568,6 +568,7 @@ a:hover {
     margin-top: auto;
     margin-left: auto;
     margin-right: auto;
+    padding-left: 30px;
     padding-top: auto;
     /* Add some padding for readability */
 }
