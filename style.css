@@ -47,7 +47,21 @@ body {
 @keyframes fade-right {
     from {
         opacity: 0;
-        transform: translateX(30px) scale(0.9);
+        transform: translateX(30px) scale(1);
+        /* Slide in from the right */
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0px) scale(1);
+        /* End at original position */
+    }
+}
+
+@keyframes fade-left {
+    from {
+        opacity: 0;
+        transform: translateX(-30px) scale(1);
         /* Slide in from the right */
     }
 
@@ -314,8 +328,6 @@ a:hover {
     /* Rounded corners */
     opacity: 0.8;
     /* Slight transparency */
-    transition: transform 0.3s ease, opacity 0.3s ease;
-    animation: fade-right 0.5s;
 }
 
 .image:hover {
@@ -383,11 +395,13 @@ a:hover {
 /* Grid Placement */
 .image-5 {
     grid-area: 2 / 1 / 4 / 2;
+    animation: fade-left 0.5s;
 }
 
 .image-6 {
     grid-area: 3 / 2 / 5 / 3;
     margin-top: 20px;
+    animation: fade-left 0.5s;
 }
 
 .text-area {
@@ -595,15 +609,6 @@ h4 {
     margin-bottom: 50px;
 }
 
-
-
-/* Responsive Design for Smaller Screens */
-
-/* For tablets and small screens */
-
-/* Responsive Design for Images and Layout */
-
-/* Tablet and small screens */
 
 
 /* Media Query for Small Screens */
