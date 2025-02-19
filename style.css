@@ -133,7 +133,7 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 2px;
+    margin-left: 0px;
 }
 
 #emailiconlight {
