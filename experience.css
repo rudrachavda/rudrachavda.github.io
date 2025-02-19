@@ -381,76 +381,6 @@ html {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @font-face {
     font-family: 'Fa brands 400';
     src: url('https://uploads-ssl.webflow.com/5b8987816c4d52a8ec985345/5bf0443db7d3e91d7b6865e3_fa-brands-400.woff2') format('woff2'),
@@ -471,26 +401,3 @@ html {
     font-display: auto;
 }
 
-@font-face {
-    font-family: 'Fa 400';
-    src: url('https://uploads-ssl.webflow.com/5b8987816c4d52a8ec985345/5bf047d276777f7735434e0b_fa-regular-400.woff2') format('woff2'), url('https://uploads-ssl.webflow.com/5b8987816c4d52a8ec985345/5bf047d176777f65ef434e0a_fa-regular-400.eot') format('embedded-opentype'), url('https://uploads-ssl.webflow.com/5b8987816c4d52a8ec985345/5bf047d1486e7f533bd67962_fa-regular-400.woff') format('woff'), url('https://uploads-ssl.webflow.com/5b8987816c4d52a8ec985345/5bf047d1de18dd3cd4425d55_fa-regular-400.ttf') format('truetype'), url('https://uploads-ssl.webflow.com/5b8987816c4d52a8ec985345/5bf047d260911ab22f54e8fb_fa-regular-400.svg') format('svg');
-    font-weight: 400;
-    font-style: normal;
-    font-display: auto;
-}
-
-@font-face {
-    font-family: 'Larsseit';
-    src: url('https://uploads-ssl.webflow.com/5b8987816c4d52a8ec985345/5ba698f22756cb2edcd26ce7_Larsseit-ExtraBold.eot') format('embedded-opentype'), url('https://uploads-ssl.webflow.com/5b8987816c4d52a8ec985345/5ba698f25ced0c1291e55227_Larsseit-ExtraBold.woff') format('woff'), url('https://uploads-ssl.webflow.com/5b8987816c4d52a8ec985345/5ba698f29ad787614b1e7a9c_Larsseit-ExtraBold.ttf') format('truetype');
-    font-weight: 800;
-    font-style: normal;
-    font-display: auto;
-}
-
-@font-face {
-    font-family: 'Larsseit';
-    src: url('https://uploads-ssl.webflow.com/5b8987816c4d52a8ec985345/5ba698f2fb278df250746418_Larsseit-Bold.eot') format('embedded-opentype'), url('https://uploads-ssl.webflow.com/5b8987816c4d52a8ec985345/5ba698f2f49b777717f01652_Larsseit-Bold.woff') format('woff'), url('https://uploads-ssl.webflow.com/5b8987816c4d52a8ec985345/5ba698f25ced0cef71e55228_Larsseit-Bold.ttf') format('truetype');
-    font-weight: 700;
-    font-style: normal;
-    font-display: auto;
-}
