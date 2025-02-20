@@ -51,7 +51,7 @@ body {
     z-index: 9999;
     grid-column-gap: 16px;
     grid-row-gap: 15px;
-    grid-template-rows: 50px 45px auto;
+    grid-template-rows: auto auto auto;
     grid-template-columns: 1fr;
     grid-auto-columns: 1fr;
     display: grid;
@@ -77,17 +77,25 @@ body {
 .icon {
     color: black;
     text-align: center;
-    padding-top: 20px;
-    padding-bottom: 15px;
-    font-family: "Fa brands 400", sans-serif;
+    padding-top: 10px;
+    padding-bottom: 10px;
     font-size: 16px
 }
 
-.icon.solid {
+.icon.mail {
     font-family: "Fa solid 900", sans-serif;
+    font-weight: 900;
+    margin: 0;
+}
+
+.icon.link {
+    font-family: "Fa brands 400", sans-serif;
     font-weight: 900
 }
 
+.icon.git i{
+    font-weight: 900
+}
 
 .icon:hover {
     color: rgb(179, 179, 179)
@@ -113,6 +121,11 @@ img {
 #linkediniconlight {
     grid-area: 3/1/4/2;
 }
+
+#githubiconlight {
+    grid-area: 4/1/5/2;
+}
+
 
 .w-layout-grid {
     grid-row-gap: 16px;
