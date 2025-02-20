@@ -665,7 +665,7 @@ h4 {
         display: flex;
         flex-direction: row;
         align-items: center;
-        gap: 15px;
+        gap: 10px;
         margin: 0;
         position: static;
         /* remove any absolute positioning */
@@ -685,6 +685,7 @@ h4 {
     }
 
     .link-projects {
+        margin-right: 10px;
         font-size: 15px;
         /* Adjust font size for smaller screens */
         transform: rotate(0deg);
