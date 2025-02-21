@@ -93,7 +93,7 @@ body {
     font-weight: 900
 }
 
-.icon.git i{
+.icon.git i {
     font-weight: 900
 }
 
@@ -251,17 +251,102 @@ a:hover {
 }
 
 
+/* 
+The grid container for your cards.
+Each .card-wrapper is one grid cell.
+*/
 .projectcardcontainer {
+    /* 3 columns, auto-rows, 20px gap */
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    /* or repeat(3, 1fr) */
+    gap: 20px;
+    /* adjust margins/padding as desired */
     margin-left: 80px;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding: 0 30px;
     margin-bottom: 40px;
-    gap: 20px 20px;
 }
 
+/* Each card (image + text) is one grid cell */
+.card-wrapper {
+    display: flex;
+    flex-direction: column;
+    /* stack card above the text */
+}
+
+/* The white card with image inside */
+.card {
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    background-color: #ffffff;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+
+    /* Center image perfectly */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px; /* Reduce padding to avoid stretching */
+}
+
+.card:hover {
+    transform: translateY(-3px);
+    /* subtle hover lift */
+}
+
+/* The placeholder image or your real image */
+.card img {
+    width: 120px; /* Fixed width */
+    height: 120px; /* Fixed height */
+    object-fit: contain; /* Ensure it doesn’t get cut */
+}
+
+/* Text info below the card */
+.card-info {
+    display: flex;
+    justify-content: space-between;
+    /* title/sub on left, date on right */
+    align-items: baseline;
+    margin-top: 8px;
+}
+
+/* Left side: title & subtitle stacked */
+.card-left {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Title styling */
+.card-title {
+    font-size: 16px;
+    font-weight: 500;
+    color: #000;
+    /* black text */
+    margin-bottom: 2px;
+}
+
+/* Subtitle styling */
+.card-sub {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Date on the right side */
+.card-date {
+    font-size: 14px;
+    color: #999;
+}
+
+/* 
+    The image inside the card 
+  */
+
+/* 
+    Card info below the square 
+    (title, subtitle on left, date on right)
+  */
 
 .temp {
     margin-left: 110px;
@@ -353,12 +438,12 @@ a:hover {
         grid-area: 2/1/3/2;
         margin-right: 15%;
     }
-    
+
     #linkediniconlight {
         grid-area: 3/1/4/2;
         margin-right: 15%;
     }
-    
+
     #githubiconlight {
         grid-area: 4/1/5/2;
         margin-right: 15%;
@@ -398,7 +483,8 @@ a:hover {
         display: none;
         margin-left: 10px;
         margin-right: 10px;
-        font-size: 24px; /* Adjust font size for smaller screens */
+        font-size: 24px;
+        /* Adjust font size for smaller screens */
     }
 
     .projectdivider {
@@ -406,19 +492,50 @@ a:hover {
         margin-left: 5px;
         margin-right: 5px;
         margin-bottom: 15px;
-        font-size: 16px; /* Adjust font size for smaller screens */
+        font-size: 16px;
+        /* Adjust font size for smaller screens */
     }
 
     .projectcardcontainer {
-        display: none;
+        display: grid;
+        grid-template-columns: 1fr;
+        /* Single column layout */
+        gap: 15px;
+        /* Reduce gap for better spacing */
+        margin-left: 0;
+        /* Remove large margins */
+        padding: 0 15px;
+        /* Adjust padding for mobile */
+        margin-bottom: 20px;
+        /* Reduce bottom margin */
     }
 
-    .temp{
-        margin-top: 0px;
-        margin-left: 10px;
-        padding: 0px;
+    /* Make the cards take full width */
+    .card {
+        width: 100%;
+        aspect-ratio: 16 / 10;
+        /* Keep aspect ratio */
+        padding: 80px;
+        /* Reduce padding for a tighter layout */
+    }
+
+    /* Ensure images fit well inside cards */
+    .card img {
+        width: 100px; /* Slightly smaller for mobile */
+        height: 100px;
+        object-fit: contain;
+    }
+
+    /* Adjust project text alignment */
+
+    /* Reduce text sizes for better fit */
+    .card-title {
+        font-size: 14px;
+    }
+
+    .card-sub,
+    .card-date {
+        font-size: 12px;
     }
 
 }
-
-
