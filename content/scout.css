@@ -230,7 +230,7 @@ a:hover {
 /* Page heading */
 
 #top {
-    color: gray;
+    color: #bebebe;
 }
 
 .content-container h1 {
@@ -277,7 +277,7 @@ a:hover {
 
 .post-date {
     font-size: 0.875rem;
-    color: #999;
+    color: #bebebe;
     margin-left: 1em;
     white-space: nowrap;
 }
@@ -286,7 +286,7 @@ a:hover {
 .post-content {
     font-size: 1rem;
     line-height: 1.6;
-    color: #444;
+    color: rgb(105, 105, 105);
 }
 
 /* Center the placeholder image */
