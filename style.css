@@ -16,7 +16,7 @@
 html {
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: Inter Placeholder, sans-serif;
 }
 
 body {
@@ -24,7 +24,7 @@ body {
     color: #333;
     background-color: floralwhite;
     margin: 0;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: Inter Placeholder, sans-serif;
     font-size: 14px;
     line-height: 20px
 }
@@ -248,7 +248,7 @@ a:hover {
 
 
 .about-intro {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: Inter Placeholder, sans-serif;
 
 }
 
@@ -421,7 +421,7 @@ a:hover {
     margin-bottom: auto;
     grid-area: 2 / 3 / 6 / 4;
     color: black;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: Inter Placeholder, sans-serif;
     line-height: 1.6;
 }
 
@@ -481,7 +481,7 @@ a:hover {
     grid-area: 2 / 1 / 3 / 4;
     font-size: 25px;
     line-height: 1;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: Inter Placeholder, sans-serif;
     margin-top: -25px;
 }
 
@@ -491,7 +491,7 @@ a:hover {
 
 .edudate {
     grid-area: 3 / 1 / 4 / 2;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: Inter Placeholder, sans-serif;
     color: rgb(100, 100, 100);
     font-size: 15px;
     margin-top: 20px;
@@ -502,7 +502,7 @@ a:hover {
     justify-self: initial;
     align-self: initial;
     color: black;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: Inter Placeholder, sans-serif;
     font-size: 20px;
     margin-top: 20px;
 }
@@ -533,7 +533,7 @@ a:hover {
     grid-area: 6 / 2 / 7 / 3;
     justify-self: initial;
     align-self: initial;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: Inter Placeholder, sans-serif;
     font-size: 15px;
     margin-top: 10px;
 }
@@ -817,7 +817,7 @@ h4 {
         margin-bottom: auto; */
         grid-area: 1 / 3 / 6 / 4;
         color: black;
-        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-family: Inter Placeholder, sans-serif;
         line-height: 1.6;
     }
 
@@ -868,7 +868,7 @@ h4 {
         grid-area: 1 / 1 / 2 / 4;
         font-size: 15px;
         line-height: 1;
-        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-family: Inter Placeholder, sans-serif;
         margin-top: 5px;
     }
 
@@ -879,7 +879,7 @@ h4 {
 
     .edudate {
         grid-area: 2 / 1 / 2 / 1;
-        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-family: Inter Placeholder, sans-serif;
         color: rgb(100, 100, 100);
         font-size: 10px;
     }
@@ -887,7 +887,7 @@ h4 {
     .edudescription {
         grid-area: 3 / 1 / 3 / 2;
         color: black;
-        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-family: Inter Placeholder, sans-serif;
         font-size: 10px;
         line-height: 1.3;
     }
