@@ -233,6 +233,12 @@ a:hover {
     color: #bebebe;
 }
 
+#title {
+    font-family: Inter, sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+}
+
 .content-container h1 {
     font-size: 2rem;
     font-weight: 600;
@@ -269,8 +275,8 @@ a:hover {
 }
 
 .post-title {
-    font-size: 1.25rem;
-    font-weight: 600;
+    font-size: 19px;
+    font-weight: 400;
     margin: 0;
     color: #333;
 }
