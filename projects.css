@@ -277,31 +277,53 @@ Each .card-wrapper is one grid cell.
 
 /* The white card with image inside */
 .card {
+    aspect-ratio: 1.56213 / 1;
+    flex: 0 0 auto;
+    height: var(171px);
+    position: relative;
     width: 100%;
-    aspect-ratio: 16 / 10;
-    background-color: #ffffff;
-    border-radius: 4px;
-    overflow: hidden;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
+    background-color: rgb(251, 251, 253);
 
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 
+        0px 0.60219px 0.60219px -1.16667px rgba(28, 29, 33, 0.133),
+        0px 2.28853px 2.28853px -2.33333px rgba(28, 29, 33, 0.12),
+        0px 10px 10px -3.5px rgba(28, 29, 33, 0.06),
+        0px 0px 0px 0px rgba(223, 224, 225, 0.3);
+    
+    transition: 
+        transform 0.4s cubic-bezier(0.25, 0.1, 0.25, 1), 
+        box-shadow 0.4s cubic-bezier(0.25, 0.1, 0.25, 1), 
+        opacity 0.3s ease-in-out;
+    opacity: 1;
+    will-change: transform, box-shadow;
     /* Center image perfectly */
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 20px; /* Reduce padding to avoid stretching */
+    padding: 20px;
+    /* Reduce padding to avoid stretching */
 }
 
 .card:hover {
     transform: translateY(-3px);
+    box-shadow:
+        0px 0.60219px 2.04744px -0.5px rgba(28, 29, 33, 0.067),
+        0px 2.28853px 7.78101px -1px rgba(28, 29, 33, 0.08),
+        0px 10px 34px -1.5px rgba(28, 29, 33, 0.14),
+        0px 0px 0px 0px rgba(223, 224, 225, 0.3);
     /* subtle hover lift */
 }
 
 /* The placeholder image or your real image */
 .card img {
-    width: 120px; /* Fixed width */
-    height: 120px; /* Fixed height */
-    object-fit: contain; /* Ensure it doesn’t get cut */
+    width: 120px;
+    /* Fixed width */
+    height: 120px;
+    /* Fixed height */
+    object-fit: contain;
+    /* Ensure it doesn’t get cut */
 }
 
 /* Text info below the card */
@@ -522,7 +544,8 @@ Each .card-wrapper is one grid cell.
 
     /* Ensure images fit well inside cards */
     .card img {
-        width: 100px; /* Slightly smaller for mobile */
+        width: 100px;
+        /* Slightly smaller for mobile */
         height: 100px;
         object-fit: contain;
     }
