@@ -103,6 +103,7 @@ body {
 
 img {
     background-image: url();
+    border-radius: 6px;
 }
 
 
